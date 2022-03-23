@@ -277,6 +277,13 @@
 				top: -224mm;
 				margin-left: -12mm;
 			}
+			
+			 @-moz-document url-prefix() {
+			     .skill{
+					top: -224mm;
+					margin-left: -12mm;
+				}
+			}
 
 
 			.skill hr
@@ -406,14 +413,25 @@
 			   from{width:10px;}
 			   to{width:48px;}
 			}
-
+			
 			pre
 			{
 				position: relative;
 				font-size: 15px;
-				top: -232mm;
+				top: -210mm;
 				left: 85mm;
 				font-family: arial;
+			}
+			
+			 @-moz-document url-prefix() {
+				pre
+				{
+					position: relative;
+					font-size: 15px;
+					top: -232mm;
+					left: 85mm;
+					font-family: arial;
+				}
 			}
 			pre a
 			{
