@@ -20,7 +20,7 @@
 			   position: relative;
 			   /*at the time of pdf print enable border and disable box-shadow and animation-iteration-count*/
 			   /*border: 1px solid; */
-			   box-shadow: 2px 4px 13px -2px #0080ff;
+			   box-shadow: 2px 4px 13px -2px;
 			   margin: 5% auto;
 			   border-radius: 20px;
 			}
@@ -330,7 +330,7 @@
 			  font-weight: normal;
 			  animation-name: mysql;
 			  animation-duration: 3s;
-			  animation-iteration-count: 10;
+			  animation-iteration-count: infinite;
 			  animation-direction: alternate;
 			  box-shadow: inset 0 0 3px #0080ff;
 			  font-weight:bold;
@@ -348,7 +348,7 @@
 				  left: -122px;
 				  animation-name: css;
 				  animation-duration: 3s;
-				  animation-iteration-count: 10;
+				  animation-iteration-count: infinite;
 				  animation-direction: alternate;
 				  box-shadow: inset 0 0 3px #0080ff;
 			}
@@ -383,7 +383,7 @@
 				  top:-7.1mm;
 				  animation-name: css;
 				  animation-duration: 3s;
-				  animation-iteration-count: 10;
+				  animation-iteration-count: infinite;
 				  animation-direction: alternate;
 				  box-shadow: inset 0 0 3px #0080ff;
 			}
@@ -401,7 +401,7 @@
 				margin-top: -2mm;
 				animation-name: python;
 				animation-duration: 3s;
-				animation-iteration-count: 10;
+				animation-iteration-count: infinite;
 				animation-direction: alternate;
 				box-shadow: inset 0 0 3px #0080ff;
 			}
@@ -454,7 +454,7 @@
 			</div>
 			<div class="name">
 				<span>deepak verma</span><br>
-				<span id="sub-name">python developer</span>
+				<span id="sub-name"><span class="auto-type"></span>Developer</span>
 				<span id="contact"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91-7073870596 </span>
 				<span id="contact2"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;alt +91-8955160103</span><br>
 				<span id="email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;dpakverma789@gmail.com </span>
@@ -633,6 +633,15 @@
 				</a>
 			</pre>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script>
+			var typed = new Typed(".auto-type",{
+				strings:['Python','Odoo','Software'],
+				typeSpeed:150,
+				backSpeed:150,
+				loop:true
+			})
+		</script>
 	</body>
 </html>
 
