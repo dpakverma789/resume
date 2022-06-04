@@ -1,647 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Python Developer</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://kit.fontawesome.com/82b1ac9497.js" crossorigin="anonymous"></script>
-		<style type="text/css">
-			*{
-				box-sizing: border-box;
-				font-family: Arial black;
-			}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
 
-			.sheet
-			{
-			   width: 210mm ;
-			   height: 297mm;
-			   background-color: white;
-			   position: relative;
-			   /*at the time of pdf print enable border and disable box-shadow and animation-iteration-count*/
-			   /*border: 1px solid; */
-			   box-shadow: 2px 4px 13px -2px;
-			   margin: 5% auto;
-			   border-radius: 20px;
-			}
+    <!--==== Bootstrap ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-			.name
-			{
-				display: block;
-				position: absolute;
-				margin: 12mm 12mm;
-				font-size: 30px;
-				text-transform: uppercase;
-				font-weight: bold;
-			}
+    <!--==== icon kit ====-->
+    <script src="https://kit.fontawesome.com/9d51f353dc.js" crossorigin="anonymous"></script>
 
-			#sub-name
-			{
-				font-size: 18px;
-				display: block;
-				text-transform: capitalize;
-				line-height: 150%;
-				color: #0080ff;
-				transition: .2s;
-			}
+    <!--==== custom css ====-->
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <section class="container" id="resume-sheet">
+        <!-- personal-details -->
+        <section id="personal-details">
+            <!-- image -->
+            <section class="profile-pic">
+				<img src="image.png" alt="profile-pic" width="148" height="148"/>	
+            </section>
+            
+            <section class="contact-details">
+                <!-- title name -->
+                <h1 class="font-weight-bold" id="name">Deepak Verma</h1>
+                <!-- sub-title designation -->
+                <h5 class="font-weight-bold" id="sub-name"><span class="auto-type" id="sub-name"></span> Developer</h5>
+                <!-- mobile -->
+                <div id="phone">
+                    <span><i class="fa-solid fa-phone"></i>&nbsp;+91-7073870596 </span>
+                    &nbsp;&nbsp;
+                    <span><i class="fa-solid fa-phone"></i>&nbsp;+91-8955160103 </span>
+                </div>
+                <!-- email and address -->
+                <div id="email">
+                    <span><i class="fa-solid fa-envelope"></i>&nbsp;dpakverma789@gmail.com</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span><i class="fa-solid fa-location-dot"></i>&nbsp;udaipur, rajasthan</span>
+                </div>
+            </section>
+        </section>
+        <div class="d-flex">
+            <section class="column-1">
+                <!-- eductaion -->
+                <section class="title" id="education">
+                    <!-- education-title -->
+                    <h5 class="font-weight-bold">education</h5>
+                    <!-- eductaion sub-title 1-->
+                    <div class="sub-title" id="education-detail">
+                        <h6 class="font-weight-bold">B.TECH in electronics and communication</h6>
+                        <p class="font-weight-bold mt-3" style="font-size: 15px;">rajasthan technical university</p>
+                        <div class="calender-marker">
+                            <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;2015 - 2019</span>
+                            &nbsp;&nbsp;
+                            <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;jaipur</span>
+                        </div>
+                    </div>
+                </section>
 
-			#sub-name:hover
-			{
-			   text-transform: uppercase;
-			   color: purple;
-			   transition: .2s;
-			   cursor: pointer;
-			}
+                <!-- experience -->
+                <section class="title" id="experience">
+                    <h5 class="font-weight-bold">experience</h5>
+                    <!-- experience 1 -->
+                    <div class="sub-title" id="education-detail">
+                        <h6 class="font-weight-bold">Software Developer at LogicLoop</h6>
+                        <div class="calender-marker">
+                            <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;April 2022 - present</span>
+                            &nbsp;&nbsp;
+                            <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;mumbai</span>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>wordked on odoo open erp framework</li>
+                                <li>wordked on fontend and backend</li>
+                                <li>odoo ORM, core-python, xml, html, js</li>
+                                <li><b>key modules:</b>
+                                    <br/>
+                                    sales, purchase, CRM, inventory, website, contact, accounts, invoice, HR
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                    </div>
+                    
+                    <!-- experience 2 -->
+                    <div class="sub-title" id="education-detail">
+                        <h6 class="font-weight-bold">Software Developer at ksolves india</h6>
+                        <div class="calender-marker">
+                            <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;sept 2020 - march 2022</span>
+                            &nbsp;&nbsp;
+                            <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;noida</span>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>odoo ORM, core-python, xml, html, js</li>
+                                <li>handled client based & product based project</li>
+                            </ul>
+                        </div>
+                        <hr/>
+                    </div>
 
-			#contact, #calendar
-			{
-				line-height: 150%;
-				color: black;
-				text-transform: lowercase;
-				font-size: 12px;
-				transition: .2s;
-			}
+                    <!-- experience 3 -->
+                    <div class="sub-title" id="education-detail">
+                        <h6 class="font-weight-bold">US IT recruiter at AVA consulting</h6>
+                        <div class="calender-marker">
+                            <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;sept 2019 - march 2020</span>
+                            &nbsp;&nbsp;
+                            <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;noida</span>
+                        </div>
+                        <hr/>
+                    </div>
 
-			#contact:hover, #contact2:hover, #email:hover, #location:hover
-			{
-				color:purple;
-				transition: .2s;
-				cursor: pointer;
-				font-size: 18px;
-			}
-
-			#location
-			{
-				color: black;
-				margin-left: 2mm;
-				text-transform: capitalize;
-				font-size: 12px;
-			}
-
-			.fa,.fab,.fas
-			{
-				line-height: 150%;
-				color: #0080ff;
-				font-size: 12px;
-			}
-			#contact2, #email
-			{
-				line-height: 150%;
-				color: black;
-				font-size: 12px;
-				margin-left: 20mm;
-				transition: .2s;
-				text-transform: lowercase;
-			}
-			#email
-			{
-				margin-left: 0;
-			}
-
-			.education
-			{
-				display: inline-block;
-				position: relative;
-				margin: 12mm 12mm;
-				top:45mm;
-				text-transform: uppercase;
-			}
-
-			.education hr
-			{
-				width: 95mm;
-				margin-left: 0mm;
-				border-bottom: 2px solid black;
-			}
-
-			.education #course,.project #project-jarvis, .strength span,.achievement #hackathone
-			{
-			   display: inline-block;
-			   width: 330px;
-			   height: 50px;
-			   font-family: Arial;
-			   text-transform: capitalize;
-			   font-weight: bold;
-			}
-
-			.education #university
-			{
-				font-size: 14px;
-				display: block;
-				font-family: Arial;
-				text-transform: capitalize;
-				line-height: 10%;
-			}
-
-			#calendar, #sub-location
-			{
-				display: inline-block;
-				margin: 15px 0px;
-				font-weight: normal;
-				font-family: Arial;
-			}
-
-			#sub-location
-			{
-				font-size: 12px;
-				text-transform: capitalize;
-				margin-left: 20px;
-			}
-
-			.project
-			{
-				position: relative;
-				margin: 12mm 12mm;
-				top:-10mm;
-				text-transform: uppercase;
-			}
-
-			.project hr,.strength hr,.achievement hr
-			{
-				margin: 5px 0px;
-				width: 80mm;
-				border-bottom: 2px solid black;
-			}
-
-			.project #project-jarvis p
-			{
-				font-size: 12px;
-				border-bottom:1px dotted black;
-				width: 350px;
-				padding-bottom: 8px;
-				text-align: justify;
-				height: auto;
-				font-family: Arial;
-				/*font-variant: small-caps;*/
-			}
-
-			.project #project-jarvis span
-			{
-				display: inline-block;
-				/*font-weight: bold;*/
-				padding-top: 5px;
-			}
-
-			.strength
-			{
-				position: relative;
-				margin: 12mm 12mm;
-				top:-28mm;
-				text-transform: uppercase;
-			}
-
-
-			.strength .fa, .achievement .fa,#english .fa, #skill-list .fa, .progress-bar .fa,.fab,.fas
-			{
-				font-size: 20px;
-				margin-right: 15px;
-				font-weight: bold;
-			}
-
-			.fa-python,.fa-file-code,.fa-database
-			{
-				transform: translate(12px,-4px);
-			}
-
-			.achievement
-			{
-				position: relative;
-				margin: 12mm 12mm;
-				top:-76mm;
-				text-transform: uppercase;
-				left:105mm;
-			}
-
-			.achievement #hackathone,.skill #skill-list span
-			{
-				font-size: 14px;
-				width: 80mm;
-				font-family: Arial;
-				border-bottom:1px dotted black;
-			}
-
-			.pic
-			{
-				width:150px;
-				height: 150px;
-				float: right;
-				margin-top:10mm;
-				margin-right: 25mm;
-			}
-
-			.mytime
-			{
-				position: relative;
-				left:125mm;
-				top:-4mm;
-				text-transform: uppercase;
-
-			}
-
-			.mytime p
-			{
-			   text-align: left;
-			   padding: 3px 4px 0;
-			}
-
-			.mytime hr,.skill hr
-			{
-				margin: 8px -30px;
-				width: 80mm;
-				border-bottom: 2px solid black;
-			}
-
-			.mytime span
-			{
-				margin-left: -30px;
-			}
+                    <!-- experience 4 -->
+                    <div class="sub-title" id="education-detail">
+                    <h6 class="font-weight-bold">Business Associate at tech mahindra</h6>
+                    <div class="calender-marker">
+                        <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;april 2019 - sept 2019</span>
+                        &nbsp;&nbsp;
+                        <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;noida</span>
+                    </div>
+                    <hr/>
+                    </div> 
+                </section>
+            </section>     
+            <!-- skills -->
+            <section class="column-1">
+                <section class="title mx-3" id="skills">
+                    <!-- skill-title -->
+                    <h5 class="font-weight-bold">mostly worked on</h5>
+                    <!-- skill-group-1 -->
+                    <section class="d-flex">
+                        <!-- skill 1 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                        
+                        <!-- skill 2 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                    </section>
+    
+                        <!-- skill-group-2 -->
+                        <section class="d-flex">
+                        <!-- skill 1 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                        
+                        <!-- skill 2 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                    </section>
+    
+                        <!-- skill-group-3 -->
+                        <section class="d-flex">
+                        <!-- skill 1 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                        
+                        <!-- skill 2 -->
+                        <span><i class="fa-brands fa-html5 skill-icon"></i></span>
+                        <span class="progress-bar">
+                            <span class="skill-name">
+                                <p>html5</p>
+                            </span>
+                        </span>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </section>
+    
 
 
-			.skill
-			{
-				position: relative;
-				left:130mm;
-				top: -140mm;
-				text-transform: uppercase;
-			}
+    <!-- ==== typewriter js ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-			 .skill #skill-list span
-			{
-				display: inline-block;
-				padding-bottom: 10px;
-				width: 80mm;
-				font-weight: bold;
-			}
+    <!-- ==== custom js ==== -->
+    <script type="text/javascript" src="index.js"></script>
 
-			.skill
-			{
-				top: -248mm;
-				margin-left: -12mm;
-			}
-
-			 @-moz-document url-prefix() {
-			     .skill{
-					top: -228mm;
-					margin-left: -12mm;
-					font-weight: bold;
-				}
-			}
-
-
-			.skill hr
-			{
-				margin-left: 0px;
-			}
-
-
-			/* language == skill property, check in html code for reference*/
-			.skill #language
-			{
-				display: inline-block;
-				margin-top: 25px;
-			}
-
-			.skill #dark .fa
-			{
-				color: black;
-			}
-
-			.progress-bar
-			{
-			  width:120px;
-			  height:20px;
-			  margin: 5px 0;
-			  background-color:#f2f2f2;
-			  border-radius:18px;
-			  display: inline-grid;
-			}
-
-			#mysql,#html5,#css3,#python,#javascript,#php
-			{
-			  position :relative;
-			  top:-14.7px;
-			  left:4px;
-			  width:48px;
-			  height:15px;
-			  background:linear-gradient(to right, #0099ff,#99d6ff);
-			  border-radius:18px;
-			  font-size: 13px;
-			  text-transform: capitalize;
-			  font-weight: normal;
-			  animation-name: mysql;
-			  animation-duration: 3s;
-			  animation-iteration-count: infinite;
-			  animation-direction: alternate;
-			  box-shadow: inset 0 0 3px #0080ff;
-			  font-weight:bold;
-			}
-
-			p{
-			   text-align:center;
-			   padding:2px;
-			}
-
-			#html5
-			{
-				  width: 48px;
-				  top: -7.2mm;
-				  left: -122px;
-				  animation-name: css;
-				  animation-duration: 3s;
-				  animation-iteration-count: infinite;
-				  animation-direction: alternate;
-				  box-shadow: inset 0 0 3px #0080ff;
-			}
-
-			#javascript
-			{
-				 top:-27.5px;
-				 width:40px;
-				 box-shadow: inset 0 0 3px #0080ff;
-			}
-			#javascript p,#php p,#html5 p,#css3 p,#mysql p,#python p
-			{
-				position: relative;
-				top:-17.8px;
-			}
-
-			#mysql
-			{
-					left: 129px;
-					top: -26.8px;
-			}
-
-			#php
-			{
-				top:-26.8px;
-			}
-
-
-			#css3
-			{
-				  width:60px;
-				  top:-7.1mm;
-				  animation-name: css;
-				  animation-duration: 3s;
-				  animation-iteration-count: infinite;
-				  animation-direction: alternate;
-				  box-shadow: inset 0 0 3px #0080ff;
-			}
-
-			@keyframes css
-			{
-			   from{width:10px;}
-			   to{width:60px;}
-			}
-
-			#python
-			{
-				top:-5.1mm;
-				width:70px;
-				margin-top: -2mm;
-				animation-name: python;
-				animation-duration: 3s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-				box-shadow: inset 0 0 3px #0080ff;
-			}
-
-			@keyframes python
-			{
-			   from{width:10px;}
-			   to{width:70px;}
-			}
-			@keyframes mysql
-			{
-			   from{width:10px;}
-			   to{width:48px;}
-			}
-
-			pre
-			{
-				position: relative;
-				font-size: 15px;
-				top: -256mm;
-				left: 75mm;
-				font-family: arial;
-			}
-
-			 @-moz-document url-prefix() {
-				pre
-				{
-					position: relative;
-					font-size: 17px;
-					top: -238mm;
-					left: 76mm;
-					font-family: arial;
-					font-weight:bold;
-				}
-			}
-			pre a
-			{
-				color:#000;
-				text-decoration: none;
-				font-size: 14px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="sheet">
-			<div class="pic">
-				<img src="pic.png" alt="profile-pic" width="148" height="148" 
-				style="border-radius:100%;
-				border:3px solid #0080ff">	
-			</div>
-			<div class="name">
-				<span>deepak verma</span><br>
-				<span id="sub-name"><span class="auto-type"></span>Developer</span>
-				<span id="contact"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91-7073870596 </span>
-				<span id="contact2"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;alt +91-8955160103</span><br>
-				<span id="email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;dpakverma789@gmail.com </span>
-				<span id="location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;udaipur, rajasthan</span>
-			</div>
-			<div class="education" style="font-weight:bold;">
-				<span style="color:#0080ff">education</span><hr>
-				<span id="course">B.TECH in electronics and communication</span>
-				<span id="university">rajasthan technical university</span>
-				<span id="calendar"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2015 - 2019</span>
-				<span id="sub-location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;jaipur</span>
-			</div>
-			<div class="mytime">
-				<span style="color:#0080ff;font-weight:bold;">mostly worked on</span>
-				<hr>
-				<div class="progress-bar">
-				   <span><i class="fa fa-html5" aria-hidden="true"></i></span>
-					<div id="mysql">
-						<p>SQL</p>
-					</div>
-				</div>
-				<div class="progress-bar">
-					<span><i class="fa fa-database" aria-hidden="true"></i></span>
-					<div id="html5">
-						<p>html5</p>
-					</div>
-				</div>
-				<br/>
-				<div class="progress-bar">
-					<span><i class="fa fa-css3" aria-hidden="true"></i></span>
-					<div id="css3">
-						<p>css3</p>
-					</div>
-				</div>
-				<div class="progress-bar">
-					<span><i class="fab fa-python"></i></span>
-					<div id="python">
-						<p>python</p>
-					</div>
-				</div>
-				<br/>
-				<div class="progress-bar">
-				   <span><i class="fab fa-js-square"></i></span>
-					<div id="javascript">
-						<p>javaScript</p>
-					</div>
-				</div>
-				<div class="progress-bar">
-				   <span><i class="fas fa-file-code"></i></span>
-					<div id="php">
-						<p>XML</p>
-				</div>
-				</div>
-			</div>
-			<div class="project" style="font-weight:bold;">
-				<span id="project-title"style="color:#0080ff">experience</span>
-				<hr>
-				<div id="project-jarvis">
-					<span style="color: #0080ff;">Software Developer at Ksolves
-						<span style="font-size: 11px;margin-top: -2mm;"><i class="fa fa-calendar" aria-hidden="true"></i>
-						sept 2020 - Present
-						<span style="margin-left: 5mm;"><i class="fa fa-map-marker" aria-hidden="true"></i> noida</span>
-						</span>
-					</span>
-					<p> 
-						<span>
-							# Worked on Odoo open ERP tools
-					    </span>
-						<span>
-							# Wordked on backend and front end in odoo
-						</span>
-						<span>
-							# Used odoo python ORM, xml for backend and html,css
-							and js for front end	
-						</span>
-					</p>
-					<span style="color: #0080ff;">US Recruiter at AVA consulting 
-						<span style="font-size: 11px;margin-top: -2mm;"><i class="fa fa-calendar" aria-hidden="true"></i>
-						sept 2019 - march 2020
-						<span style="margin-left: 5mm;"><i class="fa fa-map-marker" aria-hidden="true"></i> noida</span>
-						</span>
-					</span>
-					<p> 
-						<span>
-							# worked on <emp>W2 </emp>for our U.S client.
-					    </span>
-						<span>
-							# Used tools for the recruitment like Job diva, Monster Dice, Career Builder.
-						</span>
-						<span>
-							# <emp>Clients:</emp> Nation Star Mortgage, Fidelity National Financial, Toyota
-							Financial Services
-						</span>
-						<span>
-							# <emp>Position worked on:</emp><br>
-							IT- Full stack, UX/UI developer,data scientist,cloud engineer etc
-						</span>	
-					</p>
-					<span style="color: #0080ff;">Business Associate at tech mahindra
-						<span style="font-size: 11px;margin-top: -2mm;"><i class="fa fa-calendar" aria-hidden="true"></i>
-					   april 2019 - sept 2019
-						<span style="margin-left: 5mm;"><i class="fa fa-map-marker" aria-hidden="true"></i> noida</span>
-						</span>
-					</span>
-					<p style="border: none;">
-						<span>
-							# Resolve the OYO guest service-related problem by contacting to the
-							property manager
-						</span>
-						<span>
-							# Manages guest transaction details at the property and also solve
-							the technical issue over the Android app or website if faced by guest or
-							property manager 
-						</span>
-						<span>
-							# Maintain the OYO property up to its OYO standard 
-						</span>
-					</p>
-				</div>
-			</div>
-			<div class="achievement" style="visibility: hidden;"> <!-- style="visibility: hidden;" -->
-				<span style="color:#0080ff">achievements</span>
-				<hr>
-				<span id="hackathone"><i class="fa fa-check" aria-hidden="true"></i>Got appreciation for good team work at Ksolves</span><br/>
-				<span id="hackathone" style="border:none; padding-top: 10px;">
-					<i class="fa fa-check" aria-hidden="true"></i>Got Achiever of The Month Gift prize in Tech-M
-				</span>
-			</div>
-
-			<div class="skill tools">
-				<span style="color:#0080ff">Used Tools</span><hr>
-				<span style="font-size: 14px;text-transform: capitalize;">Pycharm</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">git</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">Excel</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">jira</span>&nbsp;&nbsp;
-			</div>
-			<br/>
-			<div class="skill tools">
-				<span style="color:#0080ff">Basic Fundamentals</span><hr>
-				<span style="font-size: 14px;text-transform: capitalize;">django</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">jQuery</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">java</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">networking</span>&nbsp;&nbsp;<br/>
-				<span style="font-size: 14px;text-transform: capitalize;">arduino</span>&nbsp;&nbsp;
-				<span style="font-size: 14px;text-transform: capitalize;">electronics & sensors</span>&nbsp;&nbsp;
-			</div>
-			<br/>
-			<div class="skill">
-				<span style="color:#0080ff">Interests</span><hr>
-				<div id="skill-list">
-					<span id="code"><i class="fa fa-cogs" aria-hidden="true"></i>learning new things</span><br>
-					<span id="code"><i class="fa fa-code" aria-hidden="true"></i>coding</span><br>
-				<span id="code" style="padding-top: 5px; border: none;"><i class="fa fa-book" aria-hidden="true"></i>reading</span>
-				</div>
-			</div>
-			<div class="skill">   <!--language==skill-->
-				<span id="language" style="color:#0080ff">language</span><hr>
-				<span id="english"><i class="fa fa-language" aria-hidden="true"></i>english</span>
-				<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-				<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-				<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-				<span id="dark"><i class="fa fa-circle" aria-hidden="true"></i></span>
-				<span id="dark"><i class="fa fa-circle" aria-hidden="true"></i></span>
-			</div>
-			<div class="skill" style="transform: translateY(8mm);">
-				<span style="color:#0080ff;">project</span><hr>
-				<span id="english" ><i class="fa fa-link" aria-hidden="true"></i></span>
-				<span id="english" style="position: relative;top: 40px; right: 40px;"><i class="fa fa-link" aria-hidden="true"></i></span>
-			</div>
-			<pre>
-				<a href="https://managepassword.herokuapp.com/" target="_blank">
-					managepassword.herokuapp.com
-				</a>
-				<a href="https://github.com/dpakverma789/Projects" target="_blank" style="position:relative;bottom:18px">
-					github.com/dpakverma789/Projects
-				</a>
-			</pre>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		<script>
-			var typed = new Typed(".auto-type",{
-				strings:['Python','Odoo','Software'],
-				typeSpeed:150,
-				backSpeed:150,
-				loop:true
-			})
-		</script>
-	</body>
+    <!-- ==== Bootstrap js ==== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82b1ac9497.js" crossorigin="anonymous"></script>
+</body>
 </html>
-
