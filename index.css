@@ -130,3 +130,17 @@ ul{
     color:#000;
     margin-top: -2px;
 }
+
+.column-1{
+    height: 94vh;
+    overflow: hidden;
+}
+
+.badge-tag{
+    background-color: #4da6ff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 8px;
+    width: auto;
+}
