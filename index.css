@@ -149,3 +149,7 @@ ul{
     max-height: 70vh;
     overflow: hidden;
 }
+
+#interest{
+    position: absolute;
+}
