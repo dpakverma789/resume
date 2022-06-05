@@ -132,7 +132,7 @@ ul{
 }
 
 .column-1{
-    height: 94vh;
+    height: max-content;
     overflow: hidden;
 }
 
@@ -143,4 +143,9 @@ ul{
     padding: 5px;
     margin: 10px 8px;
     width: auto;
+}
+
+.expeience-container{
+    max-height: 70vh;
+    overflow: hidden;
 }
